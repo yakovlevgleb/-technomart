@@ -15,9 +15,9 @@
         <header>
             <!--HEADER ORDER BOX-->
             <section class="order-box">
-                <h1 class="order-box__logo">Техномарт</h1>
+                <a class="order-box__logo"><h1>Техномарт</h1></a>
                 <form class="order-box__search" action="https://echo.htmlacademy.ru" method="get">
-                    <label for="search">Поиск:</label><input type="text" id="search">
+                    <input type="text" id="search" placeholder="Поиск:">
                 </form>
                 <ul class="order-box__buttons">
                     <li class=""><a>Закладки:0</a></li>
@@ -30,16 +30,16 @@
             <div class="header-navigation">
 
                 <!--INFO PANEL + USER NAV-->
-                <section class="aside">
-                    <div class="aside__information">
+                <section class="user-block">
+                    <div class="user-block__information">
                         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
                     </div>
-                    <p class "aside__contacts">
+                    <p class "user-block__contacts">
                         <span>+7(812)555-05-55</span> г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </p>
-                    <ul class "aside__user-block">
-                        <li><a class="navigation__button navigation__button--enter" href="#">Войти</a></li>
-                        <li><a class="navigation__button navigation__button--reg" href="#">Регистрация</a></li>
+                    <ul class "user-block__user-box">
+                        <li><a class="user-block__button user-block__button--enter" href="#">Войти</a></li>
+                        <li><a class="user-block__button user-block__button--reg" href="#">Регистрация</a></li>
                     </ul>
                 </section>
                 <!--INFO PANEL + USER NAV END-->
@@ -69,7 +69,6 @@
             <section class="suggestions">
 
                 <div class="suggestions__item">
-                    <span class="new"><span>
                     <h3>Материалы/<h3>
                     <a href="#">На любой вкус</a>
                 </div>
@@ -115,34 +114,33 @@
             <!---CATALOG ITEMS-->
             <section class="catalog-items">
 
-              <div class="catalog-item">
+              <article class="catalog-item">
                 <img src="#" alt="Перфоратор BOSCH BFG 9000" height="" width=""></img>
-                <h3>Перфоратор BOSCH BFG 9000</h3>
+                <h1>Перфоратор BOSCH BFG 9000</h1>
                 <span class="catalog-item__old">32500 Р.</span>
                     <span class="catalog-item__new">25500 Р.</span>
-                </div>
+                </article>
 
-                <div class="catalog-item">
+                <article class="catalog-item">
                     <img src="#" alt="Перфоратор BOSCH BFG 9000" height="" width=""></img>
-                    <h3>Перфоратор BOSCH BFG 3000</h3>
+                    <h1>Перфоратор BOSCH BFG 3000</h1>
                     <span class="catalog-item__old">22500 Р.</span>
                     <span class="catalog-item__new">15500 Р.</span>
-                </div>
+                </article>
 
-                <div class="catalog-item">
+                <article class="catalog-item">
                     <img src="#" alt="Перфоратор BOSCH BFG 6000" height="" width=""></img>
-                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <h1>Перфоратор BOSCH BFG 6000</h1>
                     <span class="catalog-item__old">30500 Р.</span>
                     <span class="catalog-item__new">25500 Р.</span>
-                </div>
+                </article>
 
-                <div class="catalog-item">
-                    <span class="new"><span>
+                <article class="catalog-item">
                 <img src="#" alt="Перфоратор BOSCH BFG 2000" height="" width=""></img>
-                <h3>Перфоратор BOSCH BFG 2000</h3>
+                <h1>Перфоратор BOSCH BFG 2000</h1>
                 <span class="catalog-item__old"></span>
                     <span class="catalog-item__new">12500 Р.</span>
-                </div>
+                </article>
 
             </section>
             <!---CATALOG ITEMS END-->
@@ -157,22 +155,14 @@
 
             <!---VENDOR ITEMS-->
             <section class="vendor">
-                <div class="vendor__item"><img src="#" alt="BOSCH" height="" width=""></img>
-                </div>
-                <div class="vendor__item"><img src="#" alt="Makita" height="" width=""></img>
-                </div>
-                <div class="vendor__item"><img src="#" alt="DeWALT" height="" width=""></img>
-                </div>
-                <div class="vendor__item"><img src="#" alt="Интиерскол" height="" width=""></img>
-                </div>
-                <div class="vendor__item"><img src="#" alt="HITACHI" height="" width=""></img>
-                </div>
-                <div class="vendor__item"><img src="#" alt="LG" height="" width=""></img>
-                </div>
-                <div class="vendor__item"><img src="#" alt="AEG" height="" width=""></img>
-                </div>
-                <div class="vendor__item"><img src="#" alt="METABO" height="" width=""></img>
-                </div>
+                <a class="vendor__item"><img src="#" alt="BOSCH" height="" width=""></img></a>
+                <a class="vendor__item"><img src="#" alt="Makita" height="" width=""></img></a>
+                <a class="vendor__item"><img src="#" alt="DeWALT" height="" width=""></img></a>
+                <a class="vendor__item"><img src="#" alt="Интиерскол" height="" width=""></img></a>
+                <a class="vendor__item"><img src="#" alt="HITACHI" height="" width=""></img></a>
+                <a class="vendor__item"><img src="#" alt="LG" height="" width=""></img></a>
+                <a class="vendor__item"><img src="#" alt="AEG" height="" width=""></img></a>
+                <a class="vendor__item"><img src="#" alt="METABO" height="" width=""></img></a>
             </section>
             <!---VENDOR ITEMS END-->
 
@@ -186,14 +176,14 @@
                     <li><a>Гарантия</a></li>
                     <li><a>Кредит</a></li>
                 </ul>
-                <article class="services__description">
+                <div class="services__description">
                     <h3>Доставка<h3>
                     <p>Мы с удовольствием доставим ваш товар прямо
                       к вашему подъезду совершенно бесплатно!
                       Ведь мы неплохо заработаем,
                       поднимая его на ваш этаж!</p>
                     <img></img>
-                <article>
+                <div>
             </section>
             <!---SERVICES END-->
 
@@ -233,7 +223,7 @@
         <!--FOOTER-->
         <footer>
             <div class="footer-navigation">
-              
+
                 <!--LOGO + MAIN NAVIGATION-->
                 <nav class="logo-navigation">
                     <a class="logo-navigation__logo" href="">Техномарт</a>
