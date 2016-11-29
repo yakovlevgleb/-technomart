@@ -16,7 +16,7 @@
         <!--HEADER -->
         <header>
             <!--HEADER ORDER BOX-->
-            <section class="order-box">
+            <div class="order-box">
                 <a class="order-box__logo"><h1>Техномарт</h1></a>
                 <form class="order-box__search" action="https://echo.htmlacademy.ru" method="get">
                     <input type="text" id="search" placeholder="Поиск:">
@@ -26,7 +26,7 @@
                     <li class=""><a>Корзина: 10</a></li>
                     <li class=""><a>Оформить заказ</a></li>
                 </ul>
-            </section>
+            </div>
             <!--HEADER ORDER BOX END-->
 
             <div class="header-navigation">
@@ -36,10 +36,10 @@
                     <div class="user-block__information">
                         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
                     </div>
-                    <p class "user-block__contacts">
-                        <span>+7(812)555-05-55</span> г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                    </p>
-                    <div class "user-block__user-box">
+                    <div class="user-block__contacts">
+                        <span>+7(812)555-05-55</span> <span>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                    </div>
+                    <div class="user-block__user-box">
                         <a class="user-block__login" href="#">Равшан Джамшутович</a>
                         <a class="user-block__link"></a>
                         <span>ТОЧКА</span>
@@ -93,7 +93,7 @@
                 <div>
 
                   <!--SORTING LIST-->
-                    <span>Сортировка:</span>
+                    <h2>Сортировка:</h2>
                     <ul>
                         <li><a href="#" class="sorting__item sorting__item--active">По цене</a></li>
                         <li><a href="#" class="sorting__item">По типу</a></li>
@@ -103,13 +103,8 @@
 
                   <!--ARROWS-->
                     <div class="sorting__arrows">
-                        <ul class="arrows__list">
-                            <li>
-                                <a href="#" class="arrow--top"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="arrow--down arrow--down--active"></a>
-                            </li>
+                            <a href="#" class="arrow--top">вверх</a>
+                            <a href="#" class="arrow--down arrow--down--active">вниз</a>
                         </ul>
                     </div>
                     <!--ARROWS END-->
@@ -119,12 +114,12 @@
             <!--SORTING END-->
 
             <!--FILTER-->
-            <section class="filter">
-                <form class "filter__form">
+            <aside class="filter">
+                <form class="filter__form">
 
                     <!--RANGE TOGGLE-->
                     <div class="range">
-                        <h2>Цена:</h2>
+                        <h3>Цена:</h3>
 
                         <div class="range__controls">
                             <div class="range__scale">
@@ -145,37 +140,30 @@
 
                     <!--CHECKBOX LIST SQUARE-->
                     <div class="checkbox checkbox--square">
-                        <h2 class="checkbox__heading">Производители:</h2>
+                        <h3 class="checkbox__heading">Производители:</h3>
 
-                        <ul class="checkbox__list">
-
-                            <li><input id="bosch" type="checkbox"><label for="bosch">Bosch</label></li>
-                            <li><input id="interskol" type="checkbox"><label for="interskol">Интерскол</label></li>
-                            <li><input id="makita" type="checkbox"><label for="makita">Makita</label></li>
-                            <li><input id="dewalt" type="checkbox"><label for="dewalt">Dewalt</label></li>
-                            <li><input id="hitachi" type="checkbox"><label for="hitachi">Hitachi</label></li>
-                        </ul>
+                        <label class="checkbox__item" for="bosch"><input id="bosch" type="checkbox">Bosch</label>
+                        <label class="checkbox__item" for="interskol"><input id="interskol" type="checkbox">Интерскол</label>
+                        <label class="checkbox__item" for="makita"><input id="makita" type="checkbox">Makita</label>
+                        <label class="checkbox__item" for="dewalt"><input id="dewalt" type="checkbox">Dewalt</label>
+                        <label class="checkbox__item" for="hitachi"><input id="hitachi" type="checkbox">Hitachi</label>
 
                     </div>
                     <!--CHECKBOX LIST SQUARE END-->
 
                     <!--CHECKBOX LIST CIRCLE-->
                     <div class="checkbox checkbox--circle">
-                        <h2 class="checkbox__heading">Питание:</h2>
+                        <h3 class="checkbox__heading">Питание:</h3>
 
-                        <ul class="checkbox__list">
-
-                            <li><input id="battery" type="checkbox"><label for="battery">Аккумуляторные</label></li>
-                            <li><input id="network" type="checkbox"><label for="network">Сетевые</label></li>
-
-                        </ul>
+                        <label class="checkbox__item" for="battery"><input id="battery" type="radio">Аккумуляторные</label></li>
+                        <label class="checkbox__item" for="network"><input id="network" type="radio">Сетевые</label></li>
                     </div>
                     <!--CHECKBOX LIST CIRCLE END-->
 
                     <button class="filter__btn" type="button">Показать</button>
 
                 </form>
-            </section>
+            </aside>
             <!--FILTER END-->
 
             <!--CATALOG-->
