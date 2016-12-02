@@ -418,6 +418,10 @@ input::-moz-placeholder {
   text-align:center;
 }
 
+.catalog-item:hover {
+  box-shadow: 0 10px 25px rgba(41,52,73,0.5);
+}
+
 .catalog-item__actions {
   position:absolute;
   top:0;
@@ -518,14 +522,14 @@ input::-moz-placeholder {
 
 .vendor {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin-left: 130px;
-
+  margin-bottom: 85px;
 }
 
 .vendor__item {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 
   margin-right: 20px;
   margin-bottom: 20px;
@@ -542,4 +546,119 @@ input::-moz-placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.vendor__item:hover {
+  box-shadow: 0 10px 25px rgba(41,52,73,0.5);
+}
+
+.vendor__item:active {
+  box-shadow: 0 4px 10px rgba(41,52,73,0.5);
+}
+
+.vendor__item:active img {
+  opacity: 0.3;
+}
+
+.services {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 1200px;
+
+  background-color: #f2f6f8;
+
+  padding-top: 68px;
+  padding-left: 131px;
+}
+
+.services__header {
+  display: block;
+  margin-bottom: 75px;
+}
+
+.services__header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+
+.services__header p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services__items {
+  display: inline-block;
+  vertical-align: top;
+    position: relative;
+}
+
+.services__items:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 272px;
+  background: url("../img/shadow-line.png") no-repeat;
+}
+
+
+.services__items li {
+  display: block;
+  width: 240px;
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 20px;
+  list-style: none;
+  background-color: #32425c;
+}
+
+.services__items li {
+  border-bottom: 1px solid #293449;
+}
+
+.services__items li:nth-child(2),
+.services__items li:nth-child(3) {
+  border-top: 1px solid #405069;
+}
+
+.services__items a {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.services__description {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-left: 80px;
+}
+
+.services__description h3{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.services__description p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  padding-right: 17px;
+}
+
+.services img {
+  position: absolute;
+  right:131px;
 }
