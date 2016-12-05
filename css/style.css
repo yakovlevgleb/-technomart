@@ -565,11 +565,13 @@ input::-moz-placeholder {
   vertical-align: top;
   position: relative;
   width: 1200px;
+  box-sizing: border-box;
 
   background-color: #f2f6f8;
 
   padding-top: 68px;
   padding-left: 131px;
+  padding-bottom: 102px;
 }
 
 .services__header {
@@ -579,7 +581,7 @@ input::-moz-placeholder {
 
 .services__header h2 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -588,7 +590,7 @@ input::-moz-placeholder {
 
 .services__header p {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   color: #000000;
 }
@@ -630,7 +632,7 @@ input::-moz-placeholder {
 
 .services__items a {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   color: #ffffff;
 }
@@ -644,15 +646,16 @@ input::-moz-placeholder {
 
 .services__description h3{
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  margin-bottom: 34px;
 }
 
 .services__description p {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   color: #000000;
   padding-right: 17px;
@@ -660,5 +663,99 @@ input::-moz-placeholder {
 
 .services img {
   position: absolute;
-  right:131px;
+  right: 131px;
+}
+
+.delivery {
+  display: inline-block;
+  vertical-align: top;
+
+  padding-top: 68px;
+  padding-left: 131px;
+  padding-bottom: 102px;
+}
+
+.delivery__info {
+  display: inline-block;
+  vertical-align: top;
+  width: 518px;
+  margin-right: 121px;
+}
+
+.delivery__info h2{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+
+.delivery__info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.delivery__info p:nth-child(1) {
+  margin-bottom: 36px;
+}
+
+.delivery__info .btn {
+  padding-left: 41px;
+  padding-right: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.delivery__company-name {
+  margin-bottom: 38px;
+}
+
+.delivery__company-name li{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+  list-style: none;
+
+  margin-top: 28px;
+  margin-bottom: 23px;
+}
+
+.delivery__company-name li:nth-child(3) {
+  margin: 0;
+}
+
+.delivery__contacts {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+}
+
+.delivery__contacts h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+
+.delivery__contacts p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.delivery__contacts img {
+  margin-bottom: 40px;
+}
+
+.delivery__contacts .btn {
+  padding-left: 63px;
+  padding-right: 59px;
 }
