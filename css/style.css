@@ -152,6 +152,7 @@ input::-moz-placeholder {
     vertical-align: top;
 }
 
+
 .user-block__contacts span:nth-child(1) {
     font-size: 21px;
     font-weight: 400;
@@ -282,7 +283,7 @@ input::-moz-placeholder {
     padding-left: 22px;
     padding-top: 22px;
     padding-bottom: 22px;
-      position: relative;
+    position: relative;
 }
 
 .suggestions__item::before {
@@ -396,6 +397,7 @@ input::-moz-placeholder {
     width: 620px;
     height: 266px;
     background-image: url(../img/boschman.jpg);
+    position: relative;
 }
 
 .suggestions__photo div {
@@ -433,11 +435,16 @@ input::-moz-placeholder {
     border-radius: 3px;
     padding-top: 14px;
     padding-bottom: 14px;
-    background-color: #ee3643
+    background-color: #ee3643;
+    text-align: center;
 }
 
 .suggestions__photo .btn {
     width: 195px;
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+
 }
 
 .content-header {
@@ -451,6 +458,7 @@ input::-moz-placeholder {
     padding-left: 30px;
     padding-bottom: 35px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .content-header h2 {
@@ -468,6 +476,13 @@ input::-moz-placeholder {
     vertical-align: top;
 }
 
+.content-header .btn {
+  width: 253px;
+  position: absolute;
+  right: 24px;
+  top: 25px;
+}
+
 .catalog-items {
     display: inline-block;
     vertical-align: top;
@@ -482,6 +497,21 @@ input::-moz-placeholder {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     text-align: center;
+}
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/icons/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.catalog-item:nth-child(4)::before {
+  width: 60px;
+  height: 59px;
+  background-position: -154px -179px;
 }
 
 .catalog-item:hover {
@@ -663,6 +693,7 @@ input::-moz-placeholder {
 .services__items:before {
     content: "";
     position: absolute;
+    bottom: -10%;
     right: 0;
     width: 10px;
     height: 272px;
