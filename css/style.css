@@ -148,27 +148,21 @@ input::-moz-placeholder {
     position: relative;
 }
 
-.user-block__contacts span {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.user-block__contacts:after {
+.user-block__contacts span:nth-child(1)::before{
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+  left: 470px;
   background-image: url("../img/icons/sprite.png");
   background-repeat: no-repeat;
-}
-
-.user-block__contacts .tel:after{
   width: 19px;
   height: 19px;
   background-position: -194px -194px;
 }
 
+.user-block__contacts span {
+  display: inline-block;
+  vertical-align: top;
+}
 
 .user-block__contacts span:nth-child(1) {
     font-size: 21px;
@@ -249,7 +243,6 @@ input::-moz-placeholder {
     border-bottom: 5px solid #293449;
     border-left: 1px solid #32425c;
     border-left: 1px solid #32425c;
-
 }
 
 .main-menu li {
@@ -509,11 +502,13 @@ input::-moz-placeholder {
 .catalog-item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 218px;
     margin-right: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     text-align: center;
+    height: 315px;
 }
 
 .catalog-item::before {
