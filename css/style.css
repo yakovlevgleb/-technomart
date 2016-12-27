@@ -674,10 +674,10 @@ header, main, footer {
 }
 
 .content-header--popularvendor .btn {
-  width: 253px;
-  position: absolute;
-  right: 25px;
-  top: 27px;
+    width: 253px;
+    position: absolute;
+    right: 25px;
+    top: 27px;
 }
 
 .vendor {
@@ -724,9 +724,9 @@ header, main, footer {
     width: 1200px;
     box-sizing: border-box;
     background-color: #f2f6f8;
-    padding-top: 67px;
-    padding-left: 131px;
-    padding-bottom: 63px;
+    padding-top: 65px;
+    padding-left: 130px;
+    padding-bottom: 102px;
 }
 
 .services__header {
@@ -768,10 +768,10 @@ header, main, footer {
 
 .services__items li {
     display: block;
-    width: 240px;
-    padding-top: 20px;
-    padding-left: 23px;
-    padding-bottom: 20px;
+    width: 218px;
+    padding-top: 9px;
+    padding-left: 22px;
+    padding-bottom: 19px;
     list-style: none;
     background-color: #32425c;
 }
@@ -782,6 +782,11 @@ header, main, footer {
 
 .services__items li:nth-child(2), .services__items li:nth-child(3) {
     border-top: 1px solid #405069;
+}
+
+.services__items li:nth-child(3) {
+    padding-top: 10px;
+    padding-bottom: 16px;
 }
 
 .services__items a {
@@ -795,16 +800,17 @@ header, main, footer {
     display: inline-block;
     vertical-align: top;
     width: 300px;
-    margin-left: 80px;
+    margin-left: 79px;
 }
 
 .services__description h3 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
-    margin-bottom: 34px;
+    margin-bottom: 29px;
+    margin-top: -5px
 }
 
 .services__description p {
@@ -817,7 +823,8 @@ header, main, footer {
 
 .services img {
     position: absolute;
-    right: 131px;
+    bottom: 0px;
+    right: 132px;
 }
 
 .delivery {
@@ -825,7 +832,7 @@ header, main, footer {
     vertical-align: top;
     padding-top: 80px;
     padding-left: 130px;
-    padding-bottom: 102px;
+    padding-bottom: 86px;
 }
 
 .delivery__info {
@@ -851,15 +858,20 @@ header, main, footer {
     color: #000000;
 }
 
+.delivery__info p:nth-child(2) {
+    margin-bottom: 25px;
+}
+
 .delivery__info .btn {
-    padding-left: 41px;
+    padding-left: 40px;
     padding-right: 40px;
     display: inline-block;
     vertical-align: top;
 }
 
 .delivery__company-name {
-    margin-bottom: 38px;
+    margin-top: -10px;
+    margin-bottom: 33px;
 }
 
 .delivery__company-name li {
@@ -888,7 +900,7 @@ header, main, footer {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
-    margin-bottom: 38px;
+    margin-bottom: 25px;
 }
 
 .delivery__contacts p {
@@ -896,16 +908,22 @@ header, main, footer {
     font-weight: 400;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .delivery__contacts img {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .delivery__contacts .btn {
-    padding-left: 63px;
+    padding-top: 10px;
+    padding-left: 64px;
     padding-right: 59px;
+    padding-bottom: 12px;
+}
+
+footer {
+    margin-left: 191px;
 }
 
 .footer-navigation {
@@ -914,21 +932,24 @@ header, main, footer {
     background-color: #32425c;
     width: 1200px;
     padding-left: 130px;
-    padding-bottom: 53px;
+    padding-bottom: 49px;
     box-sizing: border-box;
 }
 
 .logo-navigation {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .logo-navigation__logo {
     display: inline-block;
     vertical-align: top;
-    padding: 21px 41px;
-    margin-right: 173px;
+    padding-top: 18px;
+    padding-left: 41px;
+    padding-bottom: 15px;
+    padding-right: 42px;
+    margin-right: 172px;
     border-bottom: 5px solid #b52933;
     background-color: #ee3643;
     text-transform: uppercase;
@@ -941,13 +962,21 @@ header, main, footer {
 .logo-navigation__items {
     display: inline-block;
     vertical-align: top;
-    padding-top: 42px;
+    padding-top: 38px;
 }
 
 .logo-navigation__items li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 60px;
+    margin-right: 58px;
+}
+
+.logo-navigation__items li:nth-child(2) {
+    margin-right: 59px;
+}
+
+.logo-navigation__items li:nth-child(3) {
+    margin-right: 61px;
 }
 
 .logo-navigation__items a {
@@ -960,6 +989,7 @@ header, main, footer {
 .adress-navigation {
     display: inline-block;
     vertical-align: top;
+    margin-left: 2px;
 }
 
 .adress-navigation p {
@@ -995,19 +1025,24 @@ header, main, footer {
     vertical-align: top;
     background-color: #293449;
     width: 1200px;
-    padding-left: 130px;
-    padding-top: 40px;
+    padding-left: 131px;
+    padding-top: 37px;
+    padding-bottom: 25px;
     box-sizing: border-box;
 }
 
 .copyright__info {
+    width: 320px;
     display: inline-block;
     vertical-align: top;
-    width: 320px;
+    color: #ffffff;
+}
+
+.copyright__info p {
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    color: #ffffff;
+    padding-right: 90px;
 }
 
 .copyright__social {
@@ -1062,6 +1097,7 @@ header, main, footer {
     display: inline-block;
     vertical-align: top;
     width: 320px;
+    padding-left: 20px;
 }
 
 .copyright__links span {
@@ -1074,7 +1110,7 @@ header, main, footer {
 }
 
 .copyright__links span:nth-child(1) {
-    margin-right: 53px;
+    margin-right: 52px;
 }
 
 .copyright__links a {
@@ -1085,202 +1121,3 @@ header, main, footer {
     line-height: 18px;
     color: #ffd180;
 }
-
-
-/*SPRITE POSITION*/
-
-
-/*
-.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-basket {
-    width: 17px;
-    height: 16px;
-    background-position: -10px -10px;
-}
-
-.sprite-bookmark {
-    width: 14px;
-    height: 16px;
-    background-position: -47px -10px;
-}
-
-.sprite-car {
-    width: 78px;
-    height: 63px;
-    background-position: -81px -10px;
-}
-
-.sprite-check-off {
-    width: 23px;
-    height: 23px;
-    background-position: -179px -10px;
-}
-
-.sprite-check-off-inactive {
-    width: 23px;
-    height: 23px;
-    background-position: -222px -10px;
-}
-
-.sprite-check-on {
-    width: 27px;
-    height: 23px;
-    background-position: -10px -53px;
-}
-
-.sprite-check-on-inactive {
-    width: 27px;
-    height: 23px;
-    background-position: -179px -53px;
-}
-
-.sprite-checkbox-dot {
-    width: 25px;
-    height: 25px;
-    background-position: -226px -53px;
-}
-
-.sprite-checkbox-dot-block {
-    width: 25px;
-    height: 25px;
-    background-position: -10px -98px;
-}
-
-.sprite-checkbox-dot-inactive {
-    width: 25px;
-    height: 25px;
-    background-position: -55px -98px;
-}
-
-.sprite-checkbox-dot-inactive-block {
-    width: 25px;
-    height: 25px;
-    background-position: -100px -98px;
-}
-
-.sprite-drill {
-    width: 75px;
-    height: 61px;
-    background-position: -145px -98px;
-}
-
-.sprite-facebook {
-    width: 10px;
-    height: 18px;
-    background-position: -265px -10px;
-}
-
-.sprite-instagramm {
-    width: 17px;
-    height: 17px;
-    background-position: -240px -98px;
-}
-
-.sprite-login {
-    width: 20px;
-    height: 17px;
-    background-position: -240px -135px;
-}
-
-.sprite-login-active {
-    width: 20px;
-    height: 17px;
-    background-position: -10px -172px;
-}
-
-.sprite-materials {
-    width: 44px;
-    height: 65px;
-    background-position: -50px -179px;
-}
-
-.sprite-minus {
-    width: 25px;
-    height: 2px;
-    background-position: -240px -172px;
-}
-
-.sprite-new {
-    width: 60px;
-    height: 59px;
-    background-position: -114px -179px;
-}
-
-.sprite-phone {
-    width: 19px;
-    height: 19px;
-    background-position: -194px -194px;
-}
-
-.sprite-rightarrow {
-    width: 22px;
-    height: 40px;
-    background-position: -233px -194px;
-}
-
-.sprite-search {
-    width: 17px;
-    height: 17px;
-    background-position: -10px -254px;
-}
-
-.sprite-search-active {
-    width: 17px;
-    height: 17px;
-    background-position: -194px -254px;
-}
-
-.sprite-telega {
-    width: 59px;
-    height: 72px;
-    background-position: -295px -10px;
-}
-
-.sprite-traktor {
-    width: 78px;
-    height: 62px;
-    background-position: -275px -194px;
-}
-
-.sprite-up-dir-active {
-    width: 11px;
-    height: 10px;
-    background-position: -277px -102px;
-}
-
-.sprite-up-dir-hover {
-    width: 11px;
-    height: 10px;
-    background-position: -308px -102px;
-}
-
-.sprite-up-dir-normal {
-    width: 11px;
-    height: 10px;
-    background-position: -339px -102px;
-}
-
-.sprite-user {
-    width: 20px;
-    height: 18px;
-    background-position: -280px -132px;
-}
-
-.sprite-user-active {
-    width: 20px;
-    height: 18px;
-    background-position: -320px -132px;
-}
-
-.sprite-vk {
-    width: 20px;
-    height: 12px;
-    background-position: -47px -276px;
-}
-
-*/
